@@ -24,10 +24,12 @@
 1. 打开``note.py``
 	- 修改：``ACCESS_KEY``--你的ak
 	- 修改: ``SECRET_KEY``--你的sk
-	![](pic/aksk.png)
+	
+![](pic/aksk.png)
 	
 	- 修改：``QINIU_URL``--你的七牛默认域名
-	![](pic/url.png)
+	
+![](pic/url.png)
 	
 2. 保存
 3. 在终端中运行你的代码
