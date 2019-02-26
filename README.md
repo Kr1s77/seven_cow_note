@@ -15,7 +15,7 @@
 5. readme.md： 项目说明文件
 
 ## 克隆仓库到本地
-> $ git clone 链接
+> $ git clone https://github.com/CriseLYJ/seven_cow_note.git
 
 ## 进入项目目录
 > $ cd 你克隆到的目录
@@ -42,7 +42,10 @@
 
 ## 大功告成啦
 - 此时打开``logs.txt``，里面包含你上传的信息，和你上传的时间
+
 ![](pic/log.png)
+
+- 此时可以访问logs中记录的url，你的一个笔记文件就出来啦~
 
 ## 等待后期更新
 - 目前只是一个很糙的脚本啦！正在更新哦。。。。。
