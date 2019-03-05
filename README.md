@@ -21,14 +21,14 @@
 ## 文件目录说明
 1. ``logs.txt``: 记录上传数据
 
-![](./pic/logs.jpg)
+ ![Alt text](./pic/logs.jpg)
 
 2. ``main.py``: 项目主程序
 3. ``notes``目录: 笔记存放目录
 4. ``utils``:程序运行包
 5. ``readme.md``： 项目说明文件
 6. ``settings``：配置文件，项目所有配置都在这里面，一定要配置
-![](./pic/settings.jpg)
+ ![Alt text](./pic/settings.jpg)
 
 7. ``note.py``：项目运行程序，如果想研究的可以看一下
 8. ``write_msg.py``:封装的打印函数
@@ -56,15 +56,15 @@
 # 大功告成啦
 - 显示以下信息说明上传成功了
 
-![](./pic/upload.jpg)
+ ![Alt text](./pic/upload.jpg)
 
 - 此时打开``logs.txt``，里面包含你上传的信息，和你上传的时间
 
-![](./pic/logs.jpg)
+ ![Alt text](./pic/logs.jpg)
 
 - 此时可以访问``logs.txt``中记录的``url``，你的一个笔记文件就出来啦~
 
-![](./pic/htmlpage.jpg)
+ ![Alt text](./pic/htmlpahge.jpg)
 
 
 # 等待后期更新
