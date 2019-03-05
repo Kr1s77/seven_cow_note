@@ -8,14 +8,16 @@
 # ========================================
 
 
-import os
 import re
 
 # 封装七牛云 文件上传工具
 import time
 
+from utils.settings import ACCESS_KEY, SECRET_KEY, BUCKET_NAME, URL
+from utils.write_msg import write_logs, print_msg
+
 # 你的七牛域名
-QINIU_URL = "此处填写你的七牛云外链默认域名"
+QINIU_URL = URL
 
 
 def upload_file(data, file_url):
@@ -26,9 +28,9 @@ def upload_file(data, file_url):
     """
 
     import qiniu
-    access_key = "填写你的七牛云aK"  # 秘钥
-    secret_key = "此处填写你的七牛云sk"
-    bucket_name = "你的七牛云空间名称"  # 空间名称
+    access_key = ACCESS_KEY
+    secret_key = SECRET_KEY
+    bucket_name = BUCKET_NAME  # 空间名称
 
     q = qiniu.Auth(access_key, secret_key)
     key = file_url  # 设置文件名, 如果设置为None, 会生成随机文件名
@@ -58,9 +60,7 @@ def upload_note():
     # 将文件上传到七牛云
     file_name = upload_file(html_bytes, file_url)
     url = QINIU_URL + file_name
-    print("*" * 70)
-    print("🐍🐍您上传的文件url为：%s" % url)
-    print("*" * 70)
+    print_msg(url)
 
     # 输入文件
     add_to_file(url, file_name)
@@ -74,15 +74,7 @@ def add_to_file(url, file_name):
     info = "file_name-文件名:" + file_name
     time_now = "upload_time-上传时间:" + local_time
     url_str = "🐍🐍URL-链接:" + url
-    str = "=" * 100
+    strings = "=" * 100
 
     # 将文本写入requirements中
-    os.system("echo %s >> logs.txt" % info)
-    os.system("echo %s >> logs.txt" % time_now)
-    os.system("echo %s >> logs.txt" % url_str)
-    os.system("echo %s >> logs.txt" % str)
-
-
-if __name__ == '__main__':
-    # 运行程序
-    upload_note()
+    write_logs(info, time_now, url_str, strings)
