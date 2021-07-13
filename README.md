@@ -1,4 +1,4 @@
-# Seven Cow Note 七牛云笔记
+<h3 align='center'>Seven Cow Note 七牛云笔记</h3>
 -一个利用七牛云储存创建的云笔记python脚本
 
 # 开发环境
@@ -67,6 +67,3 @@
 
 ![Alt text](./pic/htmlpage.jpg)
 
-
-# 等待后期更新
-- 目前只是一个很糙的脚本啦！
